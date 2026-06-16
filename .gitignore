@@ -1,0 +1,13 @@
+# MAC OS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# R
+.Rhistory
+.RData
+
+# logs
+*.log
