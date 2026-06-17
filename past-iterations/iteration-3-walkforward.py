@@ -181,7 +181,7 @@ def get_sp500_tickers() -> list[str]:
 #####################
 
 # cache directory - repo-root anchored
-CACHE_DIR = PROJECT_ROOT / 'price_cache'
+CACHE_DIR = PROJECT_ROOT / 'price-cache'
 os.makedirs(CACHE_DIR, exist_ok = True)
 
 def get_cache_path(train_year, test_year):
