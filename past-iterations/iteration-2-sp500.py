@@ -50,7 +50,7 @@ pd.set_option('display.float_format', '{:.4f}'.format)
 
 def load_dgs1_data(csv_path = "DGS1.csv"):
     """
-    Load DGS1 (1Y US Treasury yield series) from a local CSV within data/.
+    Load DGS1 (1Y US Treasury yield series) from a local CSV within.
     File obtained from FRED has two columns:
         - observation_date
         - DGS1 (yield in percent, i.e. 3.01 instead of 3.01%)
@@ -83,11 +83,11 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 # walk up until repo root marker
 # assumes repo root contains "data/" folder
-while not(PROJECT_ROOT / "data").exists():
+while not(PROJECT_ROOT / 'data').exists():
     PROJECT_ROOT = PROJECT_ROOT.parent
 
-DATA_DIR = PROJECT_ROOT / "data"
-DGS1_PATH = DATA_DIR / "DGS1.csv"
+DATA_DIR = PROJECT_ROOT / 'data'
+DGS1_PATH = DATA_DIR / 'DGS1.csv'
 
 DGS1_DATA = load_dgs1_data(DGS1_PATH)
 
