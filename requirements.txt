@@ -1,0 +1,9 @@
+numpy
+pandas
+yfinance
+requests
+beautifulsoup4
+scipy
+scikit-learn
+matplotlib
+pyarrow
