@@ -166,7 +166,7 @@ import matplotlib.dates as mdates
 #####################
 
 MIN_WEIGHT = 0.00           # 0.0 -> long only
-MAX_WEIGHT = 0.10           # max weight per stock
+MAX_WEIGHT = 0.20           # max weight per stock
 
 TRADING_DAYS = 252          # trading days per year
 STARTING_CAPITAL = 1.0      # set initial investment
@@ -598,7 +598,7 @@ def save_backtest_plot(opt_curve, eq_curve, spy_curve,
     fig, ax = plt.subplots(figsize = (12, 7), dpi = 300)
 
     ax.plot(opt_curve.index, opt_curve,
-            label = 'Optimized Portfolio, linewidth = 2.5')
+            label = 'Optimized Portfolio', linewidth = 2.5)
     ax.plot(eq_curve.index, eq_curve,
            label = 'Equal-Weighted', linewidth = 2)
     ax.plot(spy_curve.index, spy_curve,
@@ -1255,7 +1255,7 @@ def format_experiment_table(df):
 #####################  
 if __name__ == '__main__':
     
-    verbose = True
+    verbose = False
     START_YEAR = 2010   # this is first training year
     END_YEAR = 2024     # this is last training year -> test year will be +1
     
